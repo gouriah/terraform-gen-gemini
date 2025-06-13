@@ -1,4 +1,4 @@
-# 🚀 terraform-gen-gemini
+ 🚀 terraform-gen-gemini
 
 A **Streamlit-based Terraform configuration generator** powered by the **Google Gemini API**.  
 The app dynamically generates Terraform HCL configurations from user infrastructure requests, optionally using relevant AWS documentation stored locally.
@@ -27,4 +27,26 @@ The app dynamically generates Terraform HCL configurations from user infrastruct
 ---
 
  📂 Project Structure
+
+terraform_gen_gemini/
+├── app.py
+├── data/
+│ └── aws_ec2.md
+├── output/ (ignored via .gitignore)
+├── .env (ignored via .gitignore)
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+
+
+GOOGLE_API_KEY=your_gemini_api_key_here
+
+streamlit run app.py
+
+
+
 
